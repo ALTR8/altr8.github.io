@@ -1,2 +1,73 @@
-body{background-image:url(/static/media/brewery-large.ff47a232.jpg);background-color:#000;background-size:cover;padding-bottom:150px}html{padding-top:50px}img{width:50%;height:auto;border-radius:10px}.title{margin-left:40%}.beer{-webkit-columns:3 10px;columns:3 10px;margin-left:20px;margin-top:15px;color:blue;font-weight:700}.btn{display:inline-block;outline:none;padding:8px 12px;font-size:14px;background-color:#fff;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:0 solid transparent}.beerbtn:hover{color:#f0f}.detailstyle{background-color:#fff;text-align:bottom}.beerInfo{margin:auto;text-align:center;position:fixed;bottom:50px;width:95%;border-radius:5px;border:10px solid #000;background-color:#fff;color:#f0f}
+body {
+    background-image: url(/static/media/brewery-large.ff47a232.jpg);
+    background-color: #000;
+    background-size: cover;
+    padding-bottom: 150px
+}
+
+html {
+    padding-top: 50px
+}
+
+img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px
+}
+
+.title {
+    margin-left: 35%
+}
+
+.beer {
+    -webkit-columns: 3 10px;
+    columns: 3 10px;
+    margin-left: 20px;
+    margin-top: 15px;
+    color: blue;
+    font-weight: 700
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 0 solid transparent
+}
+
+.beerbtn:hover {
+    color: #f0f
+}
+
+.detailstyle {
+    background-color: #fff;
+    text-align: bottom
+}
+
+.beerInfo {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    width: 95%;
+    border-radius: 5px;
+    border: 10px solid #000;
+    background-color: #fff;
+    color: #f0f
+}
+
 /*# sourceMappingURL=main.c70df076.css.map*/
