@@ -1,0 +1,106 @@
+body {
+    margin: 0 auto !important;
+    padding-bottom: 3%;
+}
+
+.nav-wrap {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 16px;
+    width: 100% !important;
+    padding: 1% 2% 1% 2%;
+    position: fixed;
+    z-index: 10000;
+    text-decoration: underline;
+    background-color: #1e1725;
+    color: white;
+    box-shadow: 0 4px 6px -6px #222;
+    .nav {
+        padding-top: 1.5%;
+    }
+    div {
+        a {
+            text-decoration: none;
+            color: white;
+            transition: font-size 0.25s;
+        }
+        a:hover {
+            font-size: 20px;
+        }
+    }
+}
+
+.logo {
+    width: 50% !important;
+}
+
+.section {
+    padding-bottom: 4%;
+}
+
+
+#about {
+    width: 90%;
+    padding-top: 10%;
+    margin: 0 auto;
+
+    img {
+        border: black 1px solid;
+    }
+}
+
+#powerlifting {
+    width: 90%;
+    padding-top: 10%;
+    margin: 0 auto;
+}
+
+
+.icons {
+    float: right;
+    width: 30%;
+    margin-right: 30%;
+}
+
+.copy {
+    margin: 0% 5% 5% 25%;
+    padding: 3%;
+}
+
+.section-head-img {
+    margin-top: 4%;
+}
+
+img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#insta {
+    padding-top: 10%;
+}
+
+.footer-wrap {
+    background-color: #1e1725;
+    padding: 5%;
+
+    .footer-category {
+        color: white;
+    }
+
+    .social {
+        padding-top: 5%;
+        width: 8%;
+        color: #b6116d;
+    }
+
+}
+
+
+.legal {
+    font-size: 11px;
+    font-family: 'Arimo', sans-serif;
+    margin-top: 1%;
+    @media (max-width: $screen-md-min) {
+        font-size: 9px;
+    }
+}
