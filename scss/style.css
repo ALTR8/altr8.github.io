@@ -2102,12 +2102,13 @@ body {
   background-color: #1e1725;
   color: white;
   box-shadow: 0 4px 6px -6px #222; }
-  .nav-wrap .nav {
+  .nav-wrap div a.tab {
     padding-top: 1.5%; }
   .nav-wrap div a {
     text-decoration: none;
     color: white;
-    transition: font-size 0.25s; }
+    transition: font-size 0.25s;
+    cursor: pointer; }
   .nav-wrap div a:hover {
     font-size: 20px; }
 
@@ -2123,6 +2124,12 @@ body {
   margin: 0 auto; }
   #about img {
     border: black 1px solid; }
+
+#clients {
+  width: 90%;
+  margin: 0 auto; }
+  #clients .image-wrap img {
+    width: 80%; }
 
 #powerlifting {
   width: 90%;

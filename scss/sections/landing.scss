@@ -14,14 +14,15 @@ body {
     background-color: #1e1725;
     color: white;
     box-shadow: 0 4px 6px -6px #222;
-    .nav {
-        padding-top: 1.5%;
-    }
     div {
+        a.tab {
+            padding-top: 1.5%;
+        }
         a {
             text-decoration: none;
             color: white;
             transition: font-size 0.25s;
+            cursor: pointer;
         }
         a:hover {
             font-size: 20px;
@@ -45,6 +46,17 @@ body {
 
     img {
         border: black 1px solid;
+    }
+}
+
+#clients {
+    width: 90%;
+    margin: 0 auto;
+
+    .image-wrap {
+        img {
+            width: 80%;
+        }
     }
 }
 
