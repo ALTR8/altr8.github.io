@@ -1,25 +1,32 @@
 body {
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 0 auto !important;
     padding-bottom: 3%;
+    background-color: white;
 }
 
 .nav-wrap {
-    font-family: 'Alegreya Sans', sans-serif;
     font-size: 16px;
     width: 100% !important;
     padding: 1% 2% 1% 2%;
     position: fixed;
     z-index: 10000;
     text-decoration: underline;
-    background-color: #1e1725;
-    color: white;
+    background-color: white;
+    color: #1e1725;
     box-shadow: 0 4px 6px -6px #222;
     div {
         .logo {
-            padding-top: 5%;
+            padding: 8% 2% 0 2%;
             width: 90% !important;
             @media (max-width: $screen-sm-max) {
                 width: 55% !important;
+            }
+        }
+        .logo:hover {
+            animation: grow 0.5s ease;
+            @media (max-width: $screen-sm-max) {
+                animation: none;
             }
         }
         a.tab {
@@ -30,24 +37,27 @@ body {
         }
         a {
             text-decoration: none;
-            color: white;
+            color: #1e1725;
+            transition: font-size 0.2s;
             cursor: pointer;
         }
         a:hover {
-            text-decoration: underline;
+            color: #320d51;
+            font-size: 18px;
         }
     }
 }
 
-
-
+.mobile-top {
+    padding-top: 30%;
+}
 
 #about {
     width: 90%;
-    padding-top: 10%;
+    padding-top: 5%;
     margin: 0 auto;
     @media (max-width: $screen-sm-max) {
-        padding-top: 38%;
+        padding-top: 15%;
     }
 
     img {
@@ -131,4 +141,8 @@ img {
     @media (max-width: $screen-md-min) {
         font-size: 9px;
     }
+}
+
+@keyframes grow {
+    to {width: 91%;}
 }
