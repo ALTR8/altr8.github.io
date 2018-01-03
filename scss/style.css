@@ -2102,32 +2102,41 @@ body {
   background-color: #1e1725;
   color: white;
   box-shadow: 0 4px 6px -6px #222; }
+  .nav-wrap div .logo {
+    padding-top: 5%;
+    width: 90% !important; }
+    @media (max-width: 991px) {
+      .nav-wrap div .logo {
+        width: 55% !important; } }
   .nav-wrap div a.tab {
-    padding-top: 1.5%; }
+    padding-top: 2%; }
+    @media (max-width: 991px) {
+      .nav-wrap div a.tab {
+        padding-top: 0; } }
   .nav-wrap div a {
     text-decoration: none;
     color: white;
-    transition: font-size 0.25s;
     cursor: pointer; }
   .nav-wrap div a:hover {
-    font-size: 20px; }
-
-.logo {
-  width: 50% !important; }
-
-.section {
-  padding-bottom: 4%; }
+    text-decoration: underline; }
 
 #about {
   width: 90%;
   padding-top: 10%;
   margin: 0 auto; }
+  @media (max-width: 991px) {
+    #about {
+      padding-top: 38%; } }
   #about img {
     border: black 1px solid; }
 
 #clients {
   width: 90%;
+  padding-top: 10%;
   margin: 0 auto; }
+  @media (max-width: 991px) {
+    #clients {
+      padding-top: 15%; } }
   #clients .image-wrap img {
     width: 80%; }
 
@@ -2135,6 +2144,15 @@ body {
   width: 90%;
   padding-top: 10%;
   margin: 0 auto; }
+  @media (max-width: 991px) {
+    #powerlifting {
+      padding-top: 15%; } }
+
+#insta {
+  padding-top: 10%; }
+  @media (max-width: 991px) {
+    #insta {
+      padding-top: 15%; } }
 
 .icons {
   float: right;
@@ -2151,9 +2169,6 @@ body {
 img {
   margin: 0 auto;
   width: 100%; }
-
-#insta {
-  padding-top: 10%; }
 
 .footer-wrap {
   background-color: #1e1725;

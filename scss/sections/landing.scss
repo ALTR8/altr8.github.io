@@ -15,34 +15,40 @@ body {
     color: white;
     box-shadow: 0 4px 6px -6px #222;
     div {
+        .logo {
+            padding-top: 5%;
+            width: 90% !important;
+            @media (max-width: $screen-sm-max) {
+                width: 55% !important;
+            }
+        }
         a.tab {
-            padding-top: 1.5%;
+            padding-top: 2%;
+            @media (max-width: $screen-sm-max) {
+                padding-top: 0;
+            }
         }
         a {
             text-decoration: none;
             color: white;
-            transition: font-size 0.25s;
             cursor: pointer;
         }
         a:hover {
-            font-size: 20px;
+            text-decoration: underline;
         }
     }
 }
 
-.logo {
-    width: 50% !important;
-}
 
-.section {
-    padding-bottom: 4%;
-}
 
 
 #about {
     width: 90%;
     padding-top: 10%;
     margin: 0 auto;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 38%;
+    }
 
     img {
         border: black 1px solid;
@@ -51,7 +57,11 @@ body {
 
 #clients {
     width: 90%;
+    padding-top: 10%;
     margin: 0 auto;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 15%;
+    }
 
     .image-wrap {
         img {
@@ -64,6 +74,16 @@ body {
     width: 90%;
     padding-top: 10%;
     margin: 0 auto;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 15%;
+    }
+}
+
+#insta {
+    padding-top: 10%;
+    @media (max-width: $screen-sm-max) {
+        padding-top: 15%;
+    }
 }
 
 
@@ -85,10 +105,6 @@ body {
 img {
     margin: 0 auto;
     width: 100%;
-}
-
-#insta {
-    padding-top: 10%;
 }
 
 .footer-wrap {
