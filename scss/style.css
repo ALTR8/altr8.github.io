@@ -2636,10 +2636,6 @@ p, body {
   padding: 0;
 }
 
-#box {
-  height: 3000px;
-}
-
 #slide {
   color: #ffffff;
   font-weight: 600;
@@ -2653,6 +2649,8 @@ p, body {
 #static {
   width: 40%;
   height: 200px;
+  position: absolute;
+  left: 48%;
   background-color: green;
   float: right;
   margin-top: 150px;
@@ -2684,10 +2682,19 @@ p, body {
   padding: 3%;
   color: white;
   margin: 0 auto;
+  font-size: 25px;
   position: fixed;
 }
+.copy a {
+  color: #05db30;
+  text-decoration: none;
+}
+.copy a:hover {
+  color: white;
+  text-decoration: none;
+}
 .copy p {
-  margin: 2%;
+  margin: 3%;
 }
 
 .hidden {
