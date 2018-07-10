@@ -28,8 +28,7 @@
 
     $(document).scroll(function() {
         var $top = $("#slide").css("top");
-        var $height = $(window).height()*(0.3)
-        console.log($height);
+        var $height = $(window).height()
         var $scroll = window.scrollY
     	$("#slide").css("top", Math.max(180 - 0.2*window.scrollY, 0) + "px");
         $("#static").css("opacity", Math.max(1 - 0.002*window.scrollY, 0));
