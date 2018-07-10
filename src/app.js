@@ -47,7 +47,6 @@
         if ($scroll === 0) {
             clearFirstAnimation()
         } else if ($scroll > $height && $scroll < $height+349) {
-            $("#slide").addClass('slide');
             clearSecondAnimation()
             firstAnimation()
         } else if ($scroll > $height+650 && $scroll < $height+670) {

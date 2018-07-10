@@ -2645,6 +2645,12 @@ p, body {
   left: 15%;
   z-index: 10;
 }
+@media (max-width: 768px) {
+  #slide {
+    font-size: 40px;
+    left: 10%;
+  }
+}
 
 #static {
   width: 40%;
@@ -2654,9 +2660,13 @@ p, body {
   background-color: green;
   float: right;
   margin-top: 150px;
-  margin-right: 80px;
   color: #ffffff;
   text-align: right;
+}
+@media (max-width: 768px) {
+  #static {
+    height: 100px;
+  }
 }
 
 .sticky {
@@ -2684,6 +2694,12 @@ p, body {
   margin: 0 auto;
   font-size: 25px;
   position: fixed;
+}
+@media (max-width: 768px) {
+  .copy {
+    font-size: 15px;
+    padding: 6%;
+  }
 }
 .copy a {
   color: #05db30;
