@@ -20,13 +20,6 @@
         $("#copy2").removeClass("visible");
     }
 
-    function animateName() {
-        var $top = $("#slide").css("top");
-        if ($top === 0) {
-            $("#slide").animate({left: '5%'});
-        }
-    }
-
     $(document).ready(function(){
         $(this).scrollTop(0);
         clearFirstAnimation()
@@ -35,12 +28,10 @@
 
     $(document).scroll(function() {
         var $top = $("#slide").css("top");
-        var $height = $(window).height()
+        var $height = $(window).height()*(0.3)
         console.log($height);
         var $scroll = window.scrollY
-        console.log("SCROLL", $scroll);
     	$("#slide").css("top", Math.max(180 - 0.2*window.scrollY, 0) + "px");
-        animateName()
         $("#static").css("opacity", Math.max(1 - 0.002*window.scrollY, 0));
         $("#slide").css("position", "fixed");
 
@@ -56,12 +47,7 @@
             clearFirstAnimation()
             secondAnimation()
         }
-
     });
-
-    $('copy-wrap').scroll(function() {
-        alert("scrolling")
-    })
 
 console.log("Alex's site");
 })(window.jQuery || {});
