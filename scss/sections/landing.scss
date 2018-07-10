@@ -1,97 +1,78 @@
 body {
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0 auto !important;
-    background-color: white;
+    padding-bottom: 1%;
 }
 
-.nav-wrap {
-    font-size: 16px;
-    width: 100% !important;
-    padding: 1% 2% 1% 2%;
-    position: fixed;
-    z-index: 10000;
-    text-decoration: underline;
-    background-color: white;
-    color: #1e1725;
-    box-shadow: 0 4px 6px -6px #222;
-    div {
-        .logo {
-            padding: 8% 2% 0 2%;
-            width: 90% !important;
-            @media (max-width: $screen-sm-max) {
-                width: 55% !important;
-            }
-        }
-        .logo:hover {
-            animation: grow 0.5s ease;
-            @media (max-width: $screen-sm-max) {
-                animation: none;
-            }
-        }
-        a.tab {
-            padding-top: 2%;
-            @media (max-width: $screen-sm-max) {
-                padding-top: 0;
-            }
-        }
-        a {
-            text-decoration: none;
-            color: #1e1725;
-            transition: font-size 0.2s;
-            cursor: pointer;
-        }
-        a:hover {
-            color: #320d51;
-            font-size: 18px;
-        }
+nav {
+    position: fixed !important;
+    background-color: white !important;
+    width: 100%;
+    font-size: 1.75em;
+    padding: 3% 2% 3% 3% !important;
+    z-index: 9000;
+    nav-item:hover {
+        color: #efb8d1 !important;
     }
 }
 
-.mobile-top {
-    padding-top: 30%;
+.navbar-toggler{
+    outline: none !important;
+    border: none;
 }
 
 #about {
-    width: 90%;
-    padding-top: 5%;
-    margin: 0 auto;
-    @media (max-width: $screen-sm-max) {
-        padding-top: 15%;
-    }
-
-    img {
-        border: black 1px solid;
-    }
-}
-
-#clients {
-    width: 90%;
-    padding-top: 10%;
-    margin: 0 auto;
-    @media (max-width: $screen-sm-max) {
-        padding-top: 15%;
-    }
-
-    .image-wrap {
-        img {
-            width: 80%;
-        }
+    padding-top: 20%;
+    padding-bottom: 10%;
+    background-color: black;
+    color: white;
+    p {
+        width: 80%;
+        font-size: 1.75em;
+        margin: 0 auto;
+        line-height: 1.5em;
     }
 }
 
-#powerlifting {
-    width: 90%;
-    padding-top: 10%;
-    margin: 0 auto;
-    @media (max-width: $screen-sm-max) {
-        padding-top: 15%;
+#ev {
+    padding: 10% 0% 10% 0%;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: black;
+    background-color: #efb8d1;
+    p {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 
-#insta {
-    padding-top: 10%;
-    @media (max-width: $screen-sm-max) {
-        padding-top: 15%;
+
+#new {
+    padding: 10% 5% 10% 5%;
+    color: white;
+    background-color: black;
+    h1, p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1.5em;
+    }
+    a {
+        color: #efb8d1;
+    }
+    a:hover {
+        color: white;
+
+    }
+}
+
+#contact {
+    font-size: 1.5em;
+    padding: 10% 0% 10% 10%;
+
+    iframe {
+        margin-left: -11%;
     }
 }
 
@@ -102,23 +83,15 @@ body {
     margin-right: 30%;
 }
 
-.copy {
-    margin: 0% 5% 5% 25%;
-    padding: 3%;
-}
-
-.section-head-img {
-    margin-top: 4%;
-}
-
 img {
     margin: 0 auto;
     width: 100%;
 }
 
 .footer-wrap {
-    background-color: #1e1725;
+    background-color: black;
     padding: 5%;
+    font-size: 1.5em;
 
     .footer-category {
         color: white;
@@ -136,14 +109,9 @@ img {
 .legal {
     font-size: 11px;
     font-family: 'Arimo', sans-serif;
-    margin-top: 2%;
-    background-color: #1e1725;
-    color: white;
+    margin-top: 1%;
+    margin-bottom: 2%;
     @media (max-width: $screen-md-min) {
         font-size: 9px;
     }
-}
-
-@keyframes grow {
-    to {width: 91%;}
 }
