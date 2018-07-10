@@ -5,105 +5,35 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Alexandra Roth</title>
     <link rel="stylesheet" type="text/css" href="./scss/style.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container-fluid">
-
-        <div class="row">
-            <div class="nav-wrap">
-                <div class="nav">
-                    <a class="col-xs-12 text-center visible-xs"><img class="logo" src=./images/signature.png /></a>
-                </div>
-                <div class="nav">
-                    <a class="col-sm-2 text-center hidden-xs"><img class="logo" src=./images/signature.png /></a>
-                    <a class="col-xs-3 col-sm-2 text-center tab" href="#about">About</a>
-                    <a class="col-xs-3 col-sm-2 text-center tab" href="#clients">Clients</a>
-                    <a class="col-xs-3 col-sm-2 text-center tab" href="#insta">Instagram</a>
-                    <a class="col-xs-3 col-sm-2 text-center tab" href="https://medium.com/@alroth" target="_blank">Blog</a>
-                    <a class="col-xs-2 col-sm-2 text-center tab hidden-xs" href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="top">
-                <div>
-                    <img class="top hidden-xs" src='./images/code.jpg'>
-                    <img class="mobile-top visible-xs" src='./images/code.jpg'>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div id="about">
-                <div class="col-xs-12 col-sm-4">
-                    <img src='./images/axios.jpg'>
-                </div>
-                <div class="col-xs-12 col-sm-8">
-                    <p>
-                        Alexandra Roth is a NYC-based software developer. She builds lots of cool things as a developer at Vaynermedia. Tech is a new adventure for Alex - until a year ago she was an opera singer and voice teacher, having earned her Bachelor's and Master's degrees from Oberlin Conservatory.<br /> Alexandra looked at code for the first time in October 2016 and fell in love. She continued her journey at <a href="https://www.flatironschool.com"> Flatiron School</a> and spent three incredible, torturous, focused months learning how to learn to code. She continues to love learning and exploring new technologies.<br />
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="clients">
-                <div class="col-xs-12 text-center">
-                    <div class="image-wrap">
-                        <img src="./images/clients.png"/>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="powerlifting">
-                <div class="col-xs-12 col-sm-8">
-                    <p>
-                        I pick up heavy things
-                    </p>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <img src="./images/bench.jpg"/>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div id="insta" class="section col-xs-12 text-center">
-                <iframe src="https://lightwidget.com/widgets/838ddfdad55551148fa9e9e36ea08e43.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 80%; border: 0; overflow: hidden;"></iframe>
-            </div>
-        </div>
-
-        <div class="row footer-wrap">
-            <div class="col-xs-12 col-sm-6">
-                <ul>
-                    <a class="footer-category" href="./about.html">About</a><br />
-                    <a class="footer-category" href="#specialties">Powerlifting</a><br />
-                    <a class="footer-category" href="#contact">Contact</a><br />
-                    <a class="footer-category" href="#new">Other</a><br />
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-6 text-right">
-                <a href="https://www.facebook.com/alexandraroth"><img class="social" src="./images/facebook.svg" /></a>
-                <a href="https://www.instagram.com/squatbenchcode"><img class="social" src="./images/instagram.svg" /></a>
-                <a href="https://www.twitter.com/alexandraroth"><img class="social" src="./images/twitter.svg" /></a>
-            </div>
-            <div class="col-xs-12 text-right">
-                <p class="legal">
-                    © 2018 Created by <a href="https://www.alexandraroth.com">Me</a>
-                </p>
-            </div>
+    <div class="header-wrap">
+        <div id="box">
+            <p id="slide" class="slide fade-in-element">Alexandra Roth</p>  <!-- This slideUp when scrolling down -->
+            <div id="static"></div>
         </div>
     </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <div class="copy-wrap">
+        <p class="copy hidden" id="copy1">
+            Alexandra Roth is this and that and does all of these things and I really need to write a bio and stuff.
+        </p>
+        <p class="copy hidden" id="copy2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+    </div>
+
+    <!-- <div class="body-wrap">
+        <div id="insta">
+            <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="https://cdn.lightwidget.com/widgets/838ddfdad55551148fa9e9e36ea08e43.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
+        </div>
+
+    </div> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./src/app.js"></script>
     <script src="https://lightwidget.com/widgets/lightwidget.js"></script>
 
 </body>
