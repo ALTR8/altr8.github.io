@@ -45,10 +45,10 @@
         } else if ($scroll > $height && $scroll < $height + 349) {
             clearSecondAnimation()
             firstAnimation()
-        } else if ($scroll > $height + 350 && $scroll < $height + 670) {
+        } else if ($scroll > $height + 350 && $scroll < $height + 352) {
             clearFirstAnimation()
             clearSecondAnimation()
-        } else if ($scroll > $height + 671 && $scroll < $height + 1500) {
+        } else if ($scroll > $height + 353 && $scroll < $height + 700) {
             clearFirstAnimation()
             secondAnimation()
         }

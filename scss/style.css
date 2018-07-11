@@ -2570,8 +2570,7 @@ p {
 }
 @media (max-width: 768px) {
   .scroll-up-arrow {
-    top: 17%;
-    left: 65%;
+    visibility: hidden;
   }
 }
 .scroll-up-arrow .circle {
@@ -2589,6 +2588,7 @@ p {
     height: 5px;
     width: 5px;
     border-radius: 5px;
+    visibility: hidden;
   }
 }
 .scroll-up-arrow .circle:nth-child(1) {
@@ -2648,8 +2648,7 @@ p {
 }
 @media (max-width: 768px) {
   .scroll-down-arrow {
-    top: 75%;
-    left: 65%;
+    visibility: hidden;
   }
 }
 .scroll-down-arrow .circle {
@@ -2666,6 +2665,7 @@ p {
     height: 5px;
     width: 5px;
     border-radius: 5px;
+    visibility: hidden;
   }
 }
 .scroll-down-arrow .circle:nth-child(1) {
@@ -2716,24 +2716,6 @@ p {
 .scroll-down-arrow .circle:nth-child(10) {
   animation-delay: 1.3s;
   transform: translate(-35px, 80px);
-}
-
-.circle {
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  border-radius: 10px;
-  background-color: darkviolet;
-  animation: animate 3s linear;
-  animation-direction: reverse;
-  animation-iteration-count: 1;
-}
-@media (max-width: 768px) {
-  .circle {
-    height: 5px;
-    width: 5px;
-    border-radius: 5px;
-  }
 }
 
 @keyframes animate {
