@@ -1,5 +1,12 @@
 (function($) {
 
+    $(document).ready(function() {
+        $(this).scrollTop(0);
+        $("scroll-down-arrow").fadeIn(400);
+        clearFirstAnimation();
+        clearSecondAnimation();
+    });
+
     function firstAnimation() {
         $(".scroll-up-arrow").removeClass("hidden")
         $("#copy1").removeClass("hidden");
@@ -23,13 +30,6 @@
         $("#copy2").addClass("hidden");
         $("#copy2").removeClass("visible");
     }
-
-    $(document).ready(function() {
-        $(this).scrollTop(0);
-        $("scroll-down-arrow").fadeIn(400);
-        clearFirstAnimation();
-        clearSecondAnimation();
-    });
 
     $(document).scroll(function() {
         var $top = $("#slide").css("top");
