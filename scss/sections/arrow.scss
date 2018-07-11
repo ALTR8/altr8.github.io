@@ -3,8 +3,9 @@
     top: 10%;
     left: 90%;
     @media (max-width: $screen-sm-min) {
-        top: 17%;
-        left: 65%;
+        // top: 17%;
+        // left: 65%;
+        visibility: hidden;
     }
 
     .circle {
@@ -84,8 +85,9 @@
     top: 80%;
     left: 90%;
     @media (max-width: $screen-sm-min) {
-        top: 75%;
-        left: 65%;
+        // top: 75%;
+        // left: 65%;
+        visibility: hidden;
     }
 
     .circle {
