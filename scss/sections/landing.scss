@@ -2,14 +2,13 @@ html {
     overflow: scroll;
 }
 
-::-webkit-scrollbar {
+.scroller:-webkit-scrollbar {
     width: 0;
     background: transparent;
     /* make scrollbar transparent */
 }
 
 body {
-    height: 3000px;
     background-color: #282828;
     font-family: 'Alegreya Sans', sans-serif;
 }
@@ -42,7 +41,6 @@ p {
     background-color: rgb(148,0,211);
     float: right;
     margin-top: 150px;
-    // margin-right: 80px;
     color: #ffffff;
     text-align: right;
     @media (max-width: $screen-sm-min) {
@@ -66,6 +64,10 @@ p {
     -o-animation: fadein 2s;
     /* Opera < 12.1 */
     animation: fadein 2s;
+}
+
+.copy-wrap {
+    background-color: darkgrey;
 }
 
 .copy {
@@ -117,14 +119,47 @@ p {
 
 .fade-arrow {
     -webkit-animation: arrowfade 2s;
-    /* Safari, Chrome and Opera > 12.1 */
+
     -moz-animation: arrowfade 2s;
-    /* Firefox < 16 */
+
     -ms-animation: arrowfade 2s;
-    /* Internet Explorer */
+
     -o-animation: arrowfade 2s;
-    /* Opera < 12.1 */
+
     animation: arrowfade 2s;
+}
+
+.set-nav {
+    -webkit-animation: setnavdesktop 2s;
+    -moz-animation: setnavdesktop 2s;
+    -ms-animation: setnavdesktop 2s;
+    -o-animation: setnavdesktop 2s;
+    animation: setnavdesktop 2s;
+    animation-fill-mode: forwards;
+    @media (max-width: $screen-sm-min) {
+        -webkit-animation: setnavmobile 2s;
+        -moz-animation: setnavmobile 2s;
+        -ms-animation: setnavmobile 2s;
+        -o-animation: setnavmobile 2s;
+        animation: setnavmobile 2s;
+    }
+}
+
+.remove-nav {
+    -webkit-animation: setnavdesktop 2s;
+    -moz-animation: setnavdesktop 2s;
+    -ms-animation: setnavdesktop 2s;
+    -o-animation: setnavdesktop 2s;
+    animation: setnavdesktop 2s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    @media (max-width: $screen-sm-min) {
+        -webkit-animation: setnavmobile 2s;
+        -moz-animation: setnavmobile 2s;
+        -ms-animation: setnavmobile 2s;
+        -o-animation: setnavmobile 2s;
+        animation: setnavmobile 2s;
+    }
 }
 
 #insta {
@@ -149,4 +184,14 @@ p {
     100% {
         opacity: 1;
     }
+}
+
+@keyframes setnavdesktop {
+    from {left: 15%; font-size: 80px;}
+    to {left: 3%; font-size: 55px;}
+}
+
+@keyframes setnavmobile {
+    from {font-size: 40px; left: 10%;}
+    to {font-size: 25px; left: 4%;}
 }
