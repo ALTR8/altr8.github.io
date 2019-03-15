@@ -20,33 +20,49 @@ p {
     padding: 0;
 }
 
+a{
+  color: yellow;
+  &:hover {
+    color: orange;
+    text-decoration: none;
+  }
+}
+
+.header-wrap {
+  position: fixed;
+  top: 30%;
+}
+
 #slide {
     color: #ffffff;
     font-weight: 600;
     font-size: 80px;
     position: relative;
-    top: 180px;
     margin: 0 5%;
     z-index: 10;
     @media (max-width: $screen-sm-min) {
         font-size: 40px;
-        left: 10%;
     }
 }
 
 .link {
   position: relative;
-  top: 200px;
   margin: 0 5%;
   color: white;
+}
+
+.link-wrap {
+  position: relative;
+  display: flex;
+  margin: 5%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .links {
   position: relative;
   display: flex;
   flex-direction: row;
-  top: 200px;
-  margin: 0 5%;
 }
 
 #static {
