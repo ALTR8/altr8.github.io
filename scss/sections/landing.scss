@@ -1,5 +1,5 @@
 html {
-    overflow: scroll;
+    overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -24,14 +24,29 @@ p {
     color: #ffffff;
     font-weight: 600;
     font-size: 80px;
-    position: absolute;
+    position: relative;
     top: 180px;
-    left: 15%;
+    margin: 0 5%;
     z-index: 10;
     @media (max-width: $screen-sm-min) {
         font-size: 40px;
         left: 10%;
     }
+}
+
+.link {
+  position: relative;
+  top: 200px;
+  margin: 0 5%;
+  color: white;
+}
+
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 200px;
+  margin: 0 5%;
 }
 
 #static {

@@ -288,7 +288,7 @@ input[type=search] {
 input[type=radio],
 input[type=checkbox] {
   margin: 4px 0 0;
-  margin-top: 1px \9;
+  margin-top: 1px \9 ;
   line-height: normal;
 }
 
@@ -428,7 +428,7 @@ input[type=month].input-lg,
 .checkbox-inline input[type=checkbox] {
   position: absolute;
   margin-left: -20px;
-  margin-top: 4px \9;
+  margin-top: 4px \9 ;
 }
 
 .radio + .radio,
@@ -2412,7 +2412,7 @@ address {
 }
 
 html {
-  overflow: scroll;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -2437,9 +2437,9 @@ p {
   color: #ffffff;
   font-weight: 600;
   font-size: 80px;
-  position: absolute;
+  position: relative;
   top: 180px;
-  left: 15%;
+  margin: 0 5%;
   z-index: 10;
 }
 @media (max-width: 768px) {
@@ -2447,6 +2447,21 @@ p {
     font-size: 40px;
     left: 10%;
   }
+}
+
+.link {
+  position: relative;
+  top: 200px;
+  margin: 0 5%;
+  color: white;
+}
+
+.links {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  top: 200px;
+  margin: 0 5%;
 }
 
 #static {
@@ -2648,7 +2663,8 @@ p {
 }
 @media (max-width: 768px) {
   .scroll-down-arrow {
-    visibility: hidden;
+    top: 75%;
+    left: 65%;
   }
 }
 .scroll-down-arrow .circle {
@@ -2665,7 +2681,6 @@ p {
     height: 5px;
     width: 5px;
     border-radius: 5px;
-    visibility: hidden;
   }
 }
 .scroll-down-arrow .circle:nth-child(1) {
