@@ -36,7 +36,7 @@ a{
 #slide {
     color: #ffffff;
     font-weight: 600;
-    font-size: 80px;
+    font-size: 70px;
     position: relative;
     margin: 0 5%;
     z-index: 10;
@@ -49,6 +49,8 @@ a{
   position: relative;
   margin: 0 5%;
   color: white;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 .link-wrap {
@@ -63,6 +65,13 @@ a{
   position: relative;
   display: flex;
   flex-direction: row;
+  @media (max-width: $screen-sm-min) {
+      flex-direction: column;
+  }
+  a {
+      font-size: 20px;
+  }
+
 }
 
 #static {
